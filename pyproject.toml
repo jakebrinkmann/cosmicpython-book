@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "cosmicpython-book"
+version = "0.1.0"
+description = ""
+authors = ["Jake Brinkmann <jakebrinkmann@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cosmicpython_book"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+flake8 = "*"
+isort = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
